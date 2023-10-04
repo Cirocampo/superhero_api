@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Hero Search</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="input">
+            <h1 id="title">Search Hero</h1>
+        <div class="search">
+            <input type="text" name="" id="barra" placeholder="Search hero id" onchange="getHero()"   >
+            <button name="Search Hero" class="button" onclick="getHero()">Search Hero</button>
+            <a href="https://superheroapi.com/ids.html" target="_blank">id for heroes</a>
+        </div>
+    </div>
+    
+   <div id="container">
+        <article style="display: none;">
+        <article id="header">
+            <div id="id" class="n1">1</div>
+            <h1 class="t1">Superhero</h1>
+        </article>
+        <img src="https://www.superherodb.com/pictures2/portraits/10/100/1313.jpg" class="im1">
+                    
+        <div class="hero_data_value">Inteligence:</div>
+        <div class="hero_stats" style="width: calc(100% - 10px); background-color: #ff7c6c; height: 15px; border-radius: 15px;"></div>
+                         
+        <div class="hero_data_value">Strengh:</div>
+        <div class="hero_stats" style="width: calc(100% - 10px); background-color: #f9b32f; height: 15px; border-radius: 15px;"></div>
+                    
+        <div class="hero_data_value">Speed:</div>
+        <div class="hero_stats" style="width: calc(100% - 10px); background-color: #556b2f; height: 15px; border-radius: 15px;"></div>
+                        
+        <div class="hero_data_value">Durability:</div>
+        <div class="hero_stats" style="width: calc(100% - 10px); background-color: #995bde; height: 15px; border-radius: 15px;"></div>
+                
+        <div class="hero_data_value">Power:</div>
+        <div class="hero_stats" style="width: calc(100% - 10px); background-color: #4fe4e7; height: 15px; border-radius: 15px;"></div>
+
+        <div class="hero_data_value">Combat:</div>
+        <div class="hero_stats" style="width: calc(100% - 10px); background-color: #ffa601; height: 15px; border-radius: 15px;"></div>
+    </article>
+    </div>             
+   
+    <script src="./script.js"></script>
+</body>
+</html>
