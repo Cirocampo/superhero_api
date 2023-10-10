@@ -1,5 +1,5 @@
-const acesso = "2607295732758396";
-const base_url = "https://superheroapi.com/api.php/" + acesso + "/";
+
+const base_url = "https://superheroapi.com/api.php/2607295732758396/search/";
 
  async function getJSON(url) {
      try {
@@ -26,15 +26,15 @@ const base_url = "https://superheroapi.com/api.php/" + acesso + "/";
      const json = await getJSON(url);
      console.log(json);
   
-     const name = json.name;
-     const id = json.id;
-     const intelligence = json.powerstats.intelligence;
-     const strength = json.powerstats.strength;
-     const speed = json.powerstats.speed;
-     const durability = json.powerstats.durability;
-     const power = json.powerstats.power;
-     const combat = json.powerstats.combat;
-     const image = json.image.url;
+     const name = json.results[0].name;
+     const id = json.results[0].id;
+     const intelligence = json.results[0].powerstats.intelligence;
+     const strength = json.results[0].powerstats.strength;
+     const speed = json.results[0].powerstats.speed;
+     const durability = json.results[0].powerstats.durability;
+     const power = json.results[0].powerstats.power;
+     const combat = json.results[0].powerstats.combat;
+     const image = json.results[0].image.url;
 
      document.getElementById("container").innerHTML = "";
      document.getElementById("container").innerHTML += `
